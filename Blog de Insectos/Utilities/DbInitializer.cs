@@ -32,7 +32,7 @@ namespace Blog_de_Insectos.Utilities
                     FirstName = "Super",
                     LastName = "Admin",
 
-                }, "Admin@0011").Wait();
+                }, "Admin@0011").GetAwaiter();
 
                 var appUser = _context.ApplicationUsers.FirstOrDefault(x=>x.Email=="admin@gmail.com");
                 if (appUser!=null)
